@@ -1,0 +1,30 @@
+###查看本地库记录的远程库地址
+git remote -v 
+###这里把远程库的地址添加个标签叫origin
+git remote add origin git@github.com:zhengsongjun/repository.git
+###强制推送，会覆盖别人的代码（慎用）
+git push -f origin master
+###在添加一个远程库上的标签
+git remote add gitlab git@gitlab.com:zhengsongjun/repository.git
+###推送到gitlab标签的地址上
+git push gitlab master
+###删除gitlab标签
+git remote remove gitlab
+###修改origin标签对应的地址
+git remote set-url origin git@gitlab.com:zhengsongjun/repository.git
+###把gitlab标签改名为coding
+git  remote rename gitlab coding
+###查看当前分支
+git branch
+###创建本地库dev分类
+git branch dev
+###切换到dev分支
+git checkout dev
+
+###推送origin地址的dev分支上
+git push origin dev
+
+git merge dev-git
+
+
+
